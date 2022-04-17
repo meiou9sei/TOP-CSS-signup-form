@@ -53,41 +53,142 @@ table {
 /****************************/
 
 /****************************/
+/*          PALETTE         */
+/****************************/
+:root {
+	--highlight: #ffcc00;
+	--main: #ff4b44;
+	--dark: #084C61;
+	--darkShade: #4F6D7A;
+	--darkLight: #56A3A6;
+}
+
+/****************************/
 /*        CONTAINERS        */
 /****************************/
+html, body {
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+}
+
 main {
 	display: flex;
-	background-color: yellow;
+	background-color: var(--main);
+	height: 100vh;
 }
 
-.bg-image-container {
+/* LEFT SIDE */
+
+.image-and-logo {
 	width: 40%;
+	position: relative;
 }
 
-.bg-image-container > img {
+.image-and-logo > img {
 	max-width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
 
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	position: absolute;
+	top: 30%;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 10px;
+}
+
+.logo > img {
+	width: 10%;
+}
+
+/* RIGHT SIDE */
+
 .main-container {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-evenly;
 	width: 60%;
+}
+
+.form-container {
+	/*
+	box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.5),
+				0 -2px 2px -2px rgba(0, 0, 0, 0.5);
+	*/
+
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	clip-path: inset(-1px 0 -10px 0); 
+}
+
+.signup-form {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 15px;	
+}
+
+.input {
+	margin: 20px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.input > input {
+	width: 48ch;
+}
+
+.submit-button {
+	background-color: var(--highlight);
+	border: none;
+	color: black;
+	padding: 15px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.5rem;
+	display: inline;
 }
 
 /****************************/
 /*          FONTS           */
 /****************************/
 
-h1 {
-	font-size: 4rem;
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	color: black;
 }
 
 em {
 	font-style: italic;
 }
 
+strong {
+	color: white;
+}
 
-/* media query the main content size to be full not 70% */
+.logo-text {
+	font-size: 5vw;
+	font-family: 'Syne Mono', monospace;
+	color: white;
+}
+
+.hero-text {
+	font-size: 5rem;
+	font-weight: 400;
+}
+
+.hero-subtext {
+	font-size: 2rem;
+	font-weight: 100;
+}
+
+.hero-followup-text {
+	font-size: 2.5rem;
+	font-weight: 300;
+}
