@@ -66,10 +66,6 @@ table {
 /****************************/
 /*        CONTAINERS        */
 /****************************/
-.warning {
-	display: none;
-}
-
 html, body {
 	height: 100%;
 	margin: 0;
@@ -292,15 +288,6 @@ strong {
 
 	.form-header {
 		font-size: 5vw;
-	}
-}
-
-@media screen and (max-height: 700px) {
-	.warning {
-		display: block;	
-		font-size: 3rem;
-		color: black;
-		background-color: yellow;
 	}
 }
 
