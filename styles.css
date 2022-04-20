@@ -120,16 +120,15 @@ main {
 .main-container {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	width: 60%;
 }
 
 .hero-container {
 	height: 30%;
-}
-
-.hero {
-	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .hero > *,
@@ -200,8 +199,31 @@ form {
 
 .login-instead {
 	margin-bottom: 16px;
+	align-self: flex-end;
 }
 
+/****************************/
+/*         VALIDITY         */
+/****************************/
+/*
+input:focus {
+	outline: none;
+	border-color: cyan;
+	box-shadow: 0 0 5px cyan;
+}
+
+input:valid {
+	outline: none;
+	border-color: green;
+	box-shadow: 0 0 5px green;
+}
+
+input:invalid {
+	outline: none;
+	border-color: purple;
+	box-shadow: 0 0 5px purple;
+}
+*/
 /****************************/
 /*          FONTS           */
 /****************************/
