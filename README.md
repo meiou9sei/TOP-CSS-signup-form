@@ -1,4 +1,4 @@
-check it out live here: https://meiousei9.github.io/TOP-CSS-signup-form/
+check it out live here: https://meiou9sei.github.io/TOP-CSS-signup-form/
 
 part of TOP intermediate HTML/CSS course, a sign up form mockup.
 
